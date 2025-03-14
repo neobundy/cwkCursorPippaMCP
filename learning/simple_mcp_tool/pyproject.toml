@@ -1,0 +1,13 @@
+[project]
+name = "simple-mcp-tool"
+version = "0.1.0"
+description = "A simple MCP server with a greeting tool using stdio transport"
+requires-python = ">=3.10"
+dependencies = ["anyio>=4.5", "click>=8.1.0", "mcp"]
+
+[project.scripts]
+simple-mcp-tool = "simple_mcp_tool.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build" 

@@ -1,0 +1,19 @@
+# Core dependencies
+mcp[cli]>=0.1.0  # Python SDK for Cursor MCP
+
+# Vector database and embeddings
+chromadb>=0.4.22  # Using direct ChromaDB API instead of langchain-chroma
+pydantic>=2.5.0,<3.0.0  # Make sure we're using Pydantic v2
+
+# OpenAI API integration
+openai>=1.0.0,<2.0.0  # Direct OpenAI API without langchain
+
+# Environment and config
+python-dotenv>=1.0.0
+
+# UI
+streamlit>=1.30.0
+
+# Utilities
+anyio>=3.7.1
+click>=8.1.7 

@@ -1,0 +1,21 @@
+[project]
+name = "mcp-pippa-memory"
+version = "0.1.0"
+description = "A memory management tool for Pippa using MCP protocol"
+requires-python = ">=3.10"
+dependencies = [
+    "anyio>=4.5",
+    "click>=8.1.0",
+    "mcp",
+    "langchain_chroma",
+    "langchain_openai",
+    "python-dotenv",
+    "chromadb"
+]
+
+[project.scripts]
+mcp-pippa-memory = "mcp_pippa_memory.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build" 
